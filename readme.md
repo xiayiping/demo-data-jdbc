@@ -30,6 +30,10 @@
 
 JDBC需要显式repo.save，破坏函数纯度，增加复杂性。
 
+## 加锁没有方言
+
+如果写sql (@Query的方式)进行加锁， 加锁语句必须跟数据库绑定。
+
 # 已经支持的好的地方
 
 ## compound id (embedded id ) to avoid id obsession
